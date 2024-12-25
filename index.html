@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <style>
+        body {
+            background-color: #2f4f4f;
+            background-image: url('https://i.pinimg.com/736x/fb/37/87/fb37873abb14a4b3bbff9ae494c63ddb.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #message {
+            font-size: 3em;
+            margin-top: 20vh;
+            animation: fadeIn 3s ease-in-out;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 
+                0 0 5px #ff0000, 
+                0 0 10px #ff0000, 
+                0 0 15px #ff6600, 
+                0 0 20px #ff6600,
+                0 0 30px #ff6600, 
+                0 0 40px #ff6600, 
+                0 0 50px #ff6600;
+            animation: ledLights 1.5s infinite alternate;
+        }
+
+        #contact {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 10px;
+            font-size: 0.9em;
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Shadow for better visibility */
+            text-align: left;
+            z-index: 100; /* Ensures it's on top */
+        }
+
+        #contact a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes ledLights {
+            0% {
+                text-shadow: 
+                    0 0 5px #ff0000, 
+                    0 0 10px #ff0000, 
+                    0 0 15px #ff6600, 
+                    0 0 20px #ff6600,
+                    0 0 30px #ff6600, 
+                    0 0 40px #ff6600, 
+                    0 0 50px #ff6600;
+            }
+            50% {
+                text-shadow: 
+                    0 0 10px #ff0000, 
+                    0 0 20px #ff0000, 
+                    0 0 30px #ff6600, 
+                    0 0 40px #ff6600,
+                    0 0 50px #ff6600, 
+                    0 0 60px #ff6600, 
+                    0 0 70px #ff6600;
+            }
+            100% {
+                text-shadow: 
+                    0 0 5px #ff0000, 
+                    0 0 10px #ff0000, 
+                    0 0 15px #ff6600, 
+                    0 0 20px #ff6600,
+                    0 0 30px #ff6600, 
+                    0 0 40px #ff6600, 
+                    0 0 50px #ff6600;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        #santa {
+            position: absolute;
+            bottom: 0;
+            left: -300px;
+            width: 300px;
+            animation: moveSanta 10s linear infinite;
+        }
+
+        @keyframes moveSanta {
+            0% {
+                left: -300px;
+            }
+            50% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        audio {
+            position: fixed;
+            bottom: 60px;
+            left: 10px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Merry Christmas from the WAMUGI'S!</div>
+    <img id="santa" src="https://i.pinimg.com/736x/b6/2f/b9/b62fb96d8e4a91633c7d3fe3c02ed368.jpg" alt="Santa Claus">
+    <audio autoplay loop>
+        <source src="audio/MariahCarey-AllIWantForChristmasIsYou.mp3" type="audio/mp3">
+    </audio>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:Kelvondambo@gmail.com">Kelvondambo@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kelvin-ndambo-76894b335/" target="_blank">Kelvin Ndambo</a></p>
+        <p>Whatsapp: <a href="https://wa.me/qr/OZFEMXZ72SNJB1">Whatsapp</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/browny_wa_umo/">Instagram</a></p>
+        <p>Phone Number: 0704858616</p>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Merry Christmas from the WAMUGI'S!");
+        });
+    </script>
+</body>
+</html>
